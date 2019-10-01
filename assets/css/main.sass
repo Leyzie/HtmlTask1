@@ -284,3 +284,23 @@ a:hover,a:focus
         padding: 10px
         line-height: 1.4
         transform: translateY(-5px)
+// Task 1.7
+#box_gradient
+    display: flex
+    align-items: flex-end
+    div
+        width: calc(100%/5 - 5px)
+        margin: 0 2.5px
+        border-top-right-radius: 7px
+        border-top-left-radius: 7px
+        background: repeating-linear-gradient(transparent, transparent 20px, #333 20px, #333 23px), linear-gradient(#FFD059, #FF8D02)
+        &:nth-child(1)
+            height: 70px
+        &:nth-child(2)
+            height: 240px
+        &:nth-child(3)
+            height: 150px
+        &:nth-child(4)
+            height: 90px
+        &:nth-child(5)
+            height: 40px
