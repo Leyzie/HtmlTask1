@@ -562,4 +562,48 @@ a:hover, a:focus {
   border-color: transparent transparent #1eb2f3 transparent;
   z-index: 0;
 }
+
+.bgdarc {
+  background-color: #000000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#article {
+  position: relative;
+  max-width: 500px;
+  margin: 15px auto;
+}
+
+#article .title {
+  text-transform: uppercase;
+  color: #ffe9af;
+  position: absolute;
+  background-color: #000000;
+  padding: 3px 5px;
+  max-width: 140px;
+}
+
+#article .title:after {
+  content: '';
+  border-style: solid;
+  border-width: 32px 20px 0 0;
+  border-color: #000000 transparent transparent transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+}
+
+#article .box-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#8e8888));
+  background-image: linear-gradient(-180deg, #fff, #8e8888);
+  padding: 40px 10px 10px 10px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+#article .box-gradient p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
 /*# sourceMappingURL=main.css.map */

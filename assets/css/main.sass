@@ -236,3 +236,37 @@ a:hover,a:focus
         border-width: 0 37px 37px 37px
         border-color: transparent transparent #1eb2f3 transparent
         z-index: 0
+// Task 1.5
+.bgdarc
+    background-color: #000000
+    padding-top: 15px
+    padding-bottom: 15px
+#article
+    position: relative
+    max-width: 500px
+    margin: 15px auto
+    .title
+        text-transform: uppercase
+        color: #ffe9af
+        position: absolute
+        background-color: #000000
+        padding: 3px 5px
+        max-width: 140px
+        &:after
+            content: ''
+            border-style: solid
+            border-width: 32px 20px 0 0
+            border-color: #000000 transparent transparent transparent
+            position: absolute
+            right: -20px
+            top: 0
+           
+    .box-gradient
+        background-image: linear-gradient(-180deg, #fff, #8e8888)
+        padding: 40px 10px 10px 10px
+        border-bottom-right-radius: 7px
+        border-bottom-left-radius: 7px
+        p
+            font-size: 1.4rem
+            line-height: 1.4
+    .text
