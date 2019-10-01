@@ -452,4 +452,70 @@ a:hover, a:focus {
 #registerform .btn:hover {
   background-color: #fff;
 }
+
+.dropmenu {
+  margin-top: 15px;
+  height: 200px;
+}
+
+.dropmenu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dropmenu .menu_toggle {
+  display: none;
+}
+
+.dropmenu .menu_toggle li {
+  margin: 0 3px;
+}
+
+.dropmenu .menu_toggle li > a {
+  padding: 4px 3px;
+}
+
+.dropmenu .menu_toggle li > a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #2bd2e8;
+}
+
+.dropmenu .menu > li {
+  margin: 5px 15px;
+}
+
+.dropmenu .menu a {
+  display: block;
+  padding: 3px 7px;
+}
+
+.dropmenu .menu > li {
+  position: relative;
+}
+
+.dropmenu .menu > li > a {
+  text-decoration: underline;
+}
+
+.dropmenu .menu > li:hover, .dropmenu .menu > li:focus, .dropmenu .menu > li:hover > a, .dropmenu .menu > li:focus > a {
+  background: #fff;
+  -webkit-box-shadow: 0 3px 10px #4d4d4d;
+          box-shadow: 0 3px 10px #4d4d4d;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  position: relative;
+  text-decoration: none;
+}
+
+.dropmenu .menu > li:hover > .menu_toggle {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 10px #4d4d4d;
+          box-shadow: 0 3px 10px #4d4d4d;
+}
 /*# sourceMappingURL=main.css.map */
