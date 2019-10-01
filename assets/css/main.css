@@ -606,4 +606,22 @@ a:hover, a:focus {
   font-size: 1.4rem;
   line-height: 1.4;
 }
+
+#headerTask .title {
+  background-color: green;
+  color: #ffff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 5px 10px;
+}
+
+#headerTask .text {
+  background-color: #eaeaea;
+  font-size: 1.4rem;
+  margin-left: 25px;
+  padding: 10px;
+  line-height: 1.4;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
 /*# sourceMappingURL=main.css.map */
