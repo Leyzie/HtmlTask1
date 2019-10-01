@@ -33,9 +33,9 @@
             </div>
             <hr />
             <div class="col-6">
-                <div class="registerform">
+                <div id="registerform">
+                    <h3>Регистрация</h3>
                     <form action="" method="post" class="form">
-                        <h3>Регистрация</h3>
                         <div class="form_group">
                             <label for="maile" class="form_label">
                                 E-mail
@@ -43,20 +43,21 @@
                             <input type="email" id="maile" class="form_input" placeholder="User E-mail">
                             <span class="error_emai"></span>
                         </div>
-                        <div class="from_froup left">
+                        <div class="form_group left">
                             <label for="pass1" class="form_label">
                                 Пароль
                             </label>
-                            <input type="password" id="pass1" class="form_input" placeholder="User E-mail">
+                            <input type="password" id="pass1" class="form_input" placeholder="">
                             <span class="error_pass1"></span>
                         </div>
-                        <div class="from_froup left">
+                        <div class="form_group right">
                             <label for="pass2" class="form_label">
                                 Пароль ещераз
                             </label>
-                            <input type="password" id="pass2" class="form_input" placeholder="User E-mail">
+                            <input type="password" id="pass2" class="form_input" placeholder="">
                             <span class="error_pass2"></span>
                         </div>
+                        <button type="submit" class="btn">Отправить</button>
                     </form>
                 </div>
             </div>
