@@ -304,3 +304,37 @@ a:hover,a:focus
             height: 90px
         &:nth-child(5)
             height: 40px
+// Task 1.8
+#breadcrumbs
+    margin-top: 25px
+    margin-bottom: 25px
+    ul
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        li
+            display: block
+            position: relative
+            background: linear-gradient(180deg, #ddd, #bfbfbf)
+            &:after
+                content: ''
+                position: absolute
+                width: 28px
+                height: 28px
+                top: -1px
+                right: -8px
+                border-bottom: 8px solid white
+                border-right: 8px solid white
+                box-sizing: border-box
+                transform: rotate(-60deg) skew(-28deg)
+                z-index: 1
+            &:hover
+                background: green
+                a
+                    color: #fff
+                    text-decoration: none
+            a
+                display: block
+                padding: 7px 25px
+                color: #000
+                font-weight: 500
