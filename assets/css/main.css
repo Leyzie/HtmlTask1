@@ -518,4 +518,48 @@ a:hover, a:focus {
   -webkit-box-shadow: 0 3px 10px #4d4d4d;
           box-shadow: 0 3px 10px #4d4d4d;
 }
+
+#pointing_block {
+  position: relative;
+  background-color: #73e4fb;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 55px;
+  padding: 25px 10px;
+  border: 2px solid #1eb2f3;
+  color: #fff;
+}
+
+#pointing_block:before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  top: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-style: solid;
+  border-width: 0 35px 35px 35px;
+  z-index: 1;
+  border-color: transparent transparent #73e4fb transparent;
+}
+
+#pointing_block:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  top: -37px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-style: solid;
+  border-width: 0 37px 37px 37px;
+  border-color: transparent transparent #1eb2f3 transparent;
+  z-index: 0;
+}
 /*# sourceMappingURL=main.css.map */
