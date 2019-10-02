@@ -717,6 +717,10 @@ a:hover, a:focus {
   font-weight: 500;
 }
 
+#breadcrumbs ul li:last-child:after {
+  display: none;
+}
+
 #breadcrumbs ul li.active {
   background: green;
 }
