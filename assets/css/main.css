@@ -532,6 +532,9 @@ a:hover, a:focus {
   padding: 25px 10px;
   border: 2px solid #1eb2f3;
   color: #fff;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #pointing_block:before {
@@ -616,6 +619,7 @@ a:hover, a:focus {
   font-weight: 400;
   font-size: 1.8rem;
   padding: 5px 10px;
+  border: 2px solid #fff;
 }
 
 #headerTask .text {
@@ -626,6 +630,7 @@ a:hover, a:focus {
   line-height: 1.4;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+  border: 2px solid #fff;
 }
 
 #box_gradient {
