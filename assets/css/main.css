@@ -456,6 +456,7 @@ a:hover, a:focus {
 .dropmenu {
   margin-top: 15px;
   height: 200px;
+  position: relative;
 }
 
 .dropmenu .menu {
@@ -503,20 +504,22 @@ a:hover, a:focus {
 
 .dropmenu .menu > li:hover, .dropmenu .menu > li:focus, .dropmenu .menu > li:hover > a, .dropmenu .menu > li:focus > a {
   background: #fff;
-  -webkit-box-shadow: 0 3px 10px #4d4d4d;
-          box-shadow: 0 3px 10px #4d4d4d;
+  -webkit-box-shadow: 0 2px 2px 0 #fff, 2px 0 2px 0 #bababa, -2px 0 2px 0 #bababa,0 -1px 2px 0 #bababa;
+          box-shadow: 0 2px 2px 0 #fff, 2px 0 2px 0 #bababa, -2px 0 2px 0 #bababa,0 -1px 2px 0 #bababa;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   position: relative;
   text-decoration: none;
+  z-index: 1;
 }
 
 .dropmenu .menu > li:hover > .menu_toggle {
   display: block;
   position: absolute;
   background-color: #fff;
-  -webkit-box-shadow: 0 3px 10px #4d4d4d;
-          box-shadow: 0 3px 10px #4d4d4d;
+  z-index: 0;
+  -webkit-box-shadow: 0 0 5px 2px #b9b9b9;
+          box-shadow: 0 0 5px 2px #b9b9b9;
 }
 
 #pointing_block {

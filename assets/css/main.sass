@@ -165,6 +165,7 @@ a:hover,a:focus
 .dropmenu
     margin-top: 15px
     height: 200px
+    position: relative
     .menu
         display: flex
         flex-wrap: wrap
@@ -189,16 +190,18 @@ a:hover,a:focus
         text-decoration: underline
     .menu>li:hover,.menu>li:focus,.menu>li:hover>a,.menu>li:focus>a
         background: #fff
-        box-shadow: 0 3px 10px hsl(0, 0%, 30%)
+        box-shadow: 0 2px 2px 0 #fff, 2px 0 2px 0 #bababa, -2px 0 2px 0 #bababa,0 -1px 2px 0 #bababa
         border-top-right-radius: 3px
         border-top-left-radius: 3px
         position: relative
         text-decoration: none
+        z-index: 1
     .menu>li:hover > .menu_toggle
         display: block
         position: absolute
         background-color: #fff
-        box-shadow: 0 3px 10px hsl(0, 0%, 30%)
+        z-index: 0
+        box-shadow: 0 0 5px 2px #b9b9b9
 //  Task 1.4
 #pointing_block
     position: relative
