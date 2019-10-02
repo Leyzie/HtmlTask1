@@ -710,19 +710,19 @@ a:hover, a:focus {
   z-index: 1;
 }
 
-#breadcrumbs ul li:hover {
-  background: green;
-}
-
-#breadcrumbs ul li:hover a {
-  color: #fff;
-  text-decoration: none;
-}
-
 #breadcrumbs ul li a {
   display: block;
   padding: 7px 25px;
   color: #000;
   font-weight: 500;
+}
+
+#breadcrumbs ul li.active {
+  background: green;
+}
+
+#breadcrumbs ul li.active a {
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
