@@ -10,6 +10,7 @@ body
     font-size: 10px
     overflow-x: hidden
     min-width: 320px
+    background-color: #39b571
 hr
     border: 1px solid #000
     width: 100%
@@ -93,262 +94,163 @@ a:hover,a:focus
     +col()
     +size(1)
     +size-sm(12)
-
-// Task 1.1
-#listmenu
-    .listmenu1
-        max-width: 200px
-        width: 100%
-        background-color: #ffe9af
-        border-radius: 7px
-        padding: 10px
-        box-shadow: 5px 5px 2px 1px #c13e00
-        border: 1px solid #000
-        margin: 10px auto
-        li
-            font-size: 1.6rem
-            line-height: 1.5
-            a
-                color: #c13e00
-                display: inline-block
-                font-weight: 500
-                &:hover
-                    color: #0007ec
-
-// Task 1.2
-#registerform
-    background-color: #4b9cf9
-    border: 2px solid #0048ff
-    color: #fff
-    margin-top: 10px
-    margin-bottom: auto
-    h3
-        color: #fff
-        font-weight: 500
-        padding: 10px 20px
-        margin-top: 10px
-        border-bottom: 1px solid #fff
-    .form
-        padding: 25px 50px 20px 20px
+.wrapper
+    +wrapper()
+    padding-left: 15px
+    padding-right: 15px
+    margin: 0 auto
+    // header
+    .header
         display: flex
         flex-wrap: wrap
-        align-items: flex-end
-        +r(406)
-            padding: 20px 15px
-        &_group
-            margin-bottom: 15px
+        justify-content: space-between
+        +r(800)
+            flex-direction: column
+        h1
+            color: #ffff
+            text-align: center
+            margin-top: 25px
+            margin-bottom: 25px
             width: 100%
-        &_label
-            color: #fff
-            font-size: 1.6rem
-            display: block
-        &_input
-            width: 100%
-            padding: 5px 10px
-    .error_emai
-        display: none
-    .left,.right
-        width: calc(100% - 55%)
-    .right
-        margin-left: 10%
-    .btn
-        margin-top: 15px
-        padding: 5px 10px
-        border: 1px solid #ffe9af
-        color: #000
-        font-size: 1.4rem
-        background-color: #ffe9af
-        transition: all 0.25s ease
-        &:hover
-            background-color: #fff
-// Task 1.3
-.dropmenu
-    margin-top: 15px
-    height: 200px
-    position: relative
-    .menu
-        display: flex
-        flex-wrap: wrap
-        &_toggle
-            display: none
+    .nav
+        +r(800)
+            order: 1
+        &-bar
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            +r(800)
+                flex-direction: column
             li
-                margin: 0 3px
-                >a
-                    padding: 4px 3px
-                >a:hover
-                    color: #fff
-                    text-decoration: none
-                    background-color: #2bd2e8
-        >li
-            margin: 5px 15px
-        a
-            display: block
-            padding: 3px 7px
-    .menu>li
-        position: relative
-    .menu>li>a
-        text-decoration: underline
-    .menu>li:hover,.menu>li:focus,.menu>li:hover>a,.menu>li:focus>a
-        background: #fff
-        box-shadow: 0 2px 2px 0 #fff, 2px 0 2px 0 #bababa, -2px 0 2px 0 #bababa,0 -1px 2px 0 #bababa
-        border-top-right-radius: 3px
-        border-top-left-radius: 3px
-        position: relative
-        text-decoration: none
-        z-index: 1
-    .menu>li:hover > .menu_toggle
+                margin: 0 5px
+                +r(800)
+                    margin: 0
+                    width: 100%
+                    border-bottom: 1px solid #fefe
+                &:first-child
+                    margin-left: 0
+                &:last-child
+                    margin-right: 0
+                a
+                    padding: 10px 15px
+                    display: block
+                    background-color: #fff
+                    color: #000
+                    &:hover
+                        background-color: #000000
+                        text-decoration: none
+                        color: #fff
+    .btn
+        padding: 10px 15px
         display: block
-        position: absolute
         background-color: #fff
-        z-index: 0
-        box-shadow: 0 0 5px 2px #b9b9b9
-//  Task 1.4
-#pointing_block
-    position: relative
-    background-color:  #73e4fb
-    text-align: center
-    font-size: 1.6rem
-    font-weight: 500
-    margin-top: 55px
-    padding: 25px 10px
-    border: 2px solid #1eb2f3
-    color: #fff
-    max-width: 700px
-    margin-left: auto
-    margin-right: auto
-    &:before
-        display: block
-        position: absolute
-        content: ''
-        width: 0
-        height: 0
-        top: -35px
-        left: 50%
-        transform: translateX(-50%)
-        border-style: solid
-        border-width: 0 35px 35px 35px
-        z-index: 1
-        border-color: transparent transparent #73e4fb transparent
-    &:after
-        display: block
-        position: absolute
-        content: ''
-        width: 0
-        height: 0
-        top: -37px
-        left: 50%
-        transform: translateX(-50%)
-        border-style: solid
-        border-width: 0 37px 37px 37px
-        border-color: transparent transparent #1eb2f3 transparent
-        z-index: 0
-// Task 1.5
-.bgdarc
-    background-color: #000000
-    padding-top: 15px
-    padding-bottom: 15px
-#article
-    position: relative
-    max-width: 500px
-    margin: 15px auto
-    .title
-        text-transform: uppercase
-        color: #ffe9af
-        position: absolute
-        background-color: #000000
-        padding: 3px 5px
-        max-width: 140px
-        &:after
-            content: ''
-            border-style: solid
-            border-width: 32px 20px 0 0
-            border-color: #000000 transparent transparent transparent
-            position: absolute
-            right: -20px
-            top: 0
-           
-    .box-gradient
-        background-image: linear-gradient(-180deg, #fff, #8e8888)
-        padding: 40px 10px 10px 10px
-        border-bottom-right-radius: 7px
-        border-bottom-left-radius: 7px
-        p
-            font-size: 1.4rem
-            line-height: 1.4
-// Task 1.6
-#headerTask
-    .title
-        background-color: green
-        color: #ffff
-        font-weight: 400
-        font-size: 1.8rem
-        padding: 5px 10px
-        border: 2px solid #fff
-    .text
-        background-color: #eaeaea
-        font-size: 1.4rem
-        margin-left: 25px
-        padding: 10px
-        line-height: 1.4
-        transform: translateY(-5px)
-        border: 2px solid #fff
-// Task 1.7
-#box_gradient
-    display: flex
-    align-items: flex-end
-    max-width: 270px
-    div
-        width: calc(100%/5 - 5px)
-        margin: 0 2.5px
-        border-top-right-radius: 7px
-        border-top-left-radius: 7px
-        background: repeating-linear-gradient(transparent, transparent 20px, #333 20px, #333 23px), linear-gradient(#FFD059, #FF8D02)
-        &:nth-child(1)
-            height: 110px
-        &:nth-child(2)
-            height: 41px
-        &:nth-child(3)
-            height: 179px
-        &:nth-child(4)
-            height: 225px
-        &:nth-child(5)
-            height: 110px
-        &:nth-child(6)
-            height: 65px
-// Task 1.8
-#breadcrumbs
-    margin-top: 25px
-    margin-bottom: 25px
-    ul
+        color: #000
+        height: 37px
+        +r(800)
+            width: 100%
+            text-align: left
+            margin-bottom: 15px
+        &:hover
+            background-color: #000000
+            text-decoration: none
+            color: #fff
+    .serch
+        flex-grow: 1
+        margin-left: 10px
+        +r(800)
+            margin-left: 0
+        form
+            display: flex
+            flex-wrap: wrap
+        input
+            background-color: rgba(162, 161, 161, 0.5)
+            margin-right: 10px
+            flex-grow: 2
+            padding: 10px
+            +r(800)
+                display: none
+    .content
+        margin-top: 25px
+        +r(1000)
+            .col-3
+                display: flex
+                flex-direction: column
+                flex-wrap: wrap
+                flex-flow: wrap
+                >.card
+                    width: 100%
+            .col-3,.col-9
+                +size(6)
+        +r(800)
+            .col-3,.col-9
+                +size(12)
+    .revers
         display: flex
-        flex-wrap: wrap
-        align-items: center
-        li
-            display: block
-            position: relative
-            background: linear-gradient(180deg, #ddd, #bfbfbf)
-            &:after
-                content: ''
-                position: absolute
-                width: 28px
-                height: 28px
-                top: -1px
-                right: -8px
-                border-bottom: 8px solid white
-                border-right: 8px solid white
-                box-sizing: border-box
-                transform: rotate(-60deg) skew(-28deg)
-                z-index: 1
-            a
-                display: block
-                padding: 7px 25px
-                color: #000
-                font-weight: 500
-            &:last-child
-                &:after
-                    display: none
-        li.active
-            background: green
-            a
-                color: #fff
-                text-decoration: none
+        flex-direction: row-reverse
+        +r(1000)
+            flex-direction: column
+        .card-body
+            +size(6)
+            +r(1000)
+                width: auto
+                padding: 0
+        .card-image
+            +size(6)
+            +r(1000)
+                width: auto
+                padding: 0
+    .bottom_colum
+        +r(1000)
+            .col-8
+                +size(6)
+            .col-4
+                +size(6)
+        +r(800)
+            .col-8
+                +size(12)
+            .col-4
+                +size(12)
+
+    
+// card
+.card
+    background-color: #fff
+    display: flex
+    flex-direction: column
+    box-shadow: 0px 0px 3px 0px #777777
+    margin-bottom: 20px
+    img
+        max-width: 100%
+        width: 100%
+        height: auto
+        display: block
+        object-fit: cover
+    &-body
+        margin-left: 10px
+        margin-bottom: 10px
+        margin-right: 10px
+        display: flex
+        flex-direction: column
+        flex-grow: 2
+    &-title
+        margin-top: 10px
+        margin-bottom: 10px
+        a
+            color: #000000
+            font-size: 2rem
+            &:hover
+                color: #337ab7
+    &-text
+        margin-bottom: 15px
+        line-height: 1.5
+        font-size: 1.3rem
+    &-footer
+        margin-top: auto
+        display: flex
+        justify-content: space-between
+        margin-bottom: 10px
+        a
+            font-size: 1.1rem
+            color: #948c8c
+            &:hover
+                color: #337ab7
